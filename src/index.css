@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.part1 {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
+}
+
+.ui {
+    transition: 0.3s;
+}
+
+h1 {
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.slack {
+    transform: translateX(0%);
+    transition: 0.5s ease-in-out;
+}
+
+:hover.slack {
+    transform: translateX(10%);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 22px rgba(33, 33, 33, .2);
+}
+
+.box:hover {
+    box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+}
+
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {}
